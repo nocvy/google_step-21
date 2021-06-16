@@ -91,7 +91,7 @@ int main() {
     string start, goal;
 
     {	/* --- ページ情報の読み込み --- */
-        ifstream file("data/pages.txt");
+        ifstream file("data/pages_small.txt");
         string data;
         while (getline(file, data)) {
             auto index = data.find('\t');
@@ -102,7 +102,7 @@ int main() {
     }
 
     {	/* --- リンク情報の読み込み --- */
-        ifstream file("data/links.txt");
+        ifstream file("data/links_small.txt");
         string data;
         while (getline(file, data)) {
             auto index = data.find('\t');
